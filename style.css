@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;  
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.table-wrapper {
+  margin-right: 20px;
+  margin-left: 80px;
+}
+
+.table-wrapper2 {
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.universitas-table {
+  border-collapse: collapse;
+  width: 100%; 
+  font-size: 15px; 
+  background-color: rgba(255, 252, 252, 0.261); 
+  overflow: hidden; 
+}
+
+.universitas-table th, 
+.universitas-table td {
+  border: 1px solid black;
+  padding: 12px; 
+  text-align: center;
+}
+
+.universitas-table img {
+  width: 100px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 10%; 
+  cursor: pointer;
+}
+
+.universitas-table th {
+  text-align: center;
+}
+
+.universitas-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.dark-mode {
+  background-image: url("https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+  color: #ffffff; 
+}
+
+.dark-mode .universitas-table {
+  background-color: rgba(10, 9, 9, 0.19);
+  color: #fff;
+}
+
+.dark-mode .universitas-table th,
+.dark-mode .universitas-table td {
+  border-color: #fff;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 57px;
+  right: 100px;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.dark-mode-toggle label {
+  cursor: pointer;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+}
+
+.dark-mode-toggle label:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + label:before {
+  transform: translateX(30px);
+  background-color: #333;
+}
+
+.dark-mode-toggle span {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 32px; 
+}
+
